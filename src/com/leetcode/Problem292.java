@@ -14,7 +14,7 @@ package com.leetcode;
  * game: no matter 1, 2, or 3 stones you remove, the last stone will always be
  * removed by your friend.
  */
-public class problem292 {
+public class Problem292 {
     public static boolean canWinNim(int n) {
         return n % 4 != 0;
     }

@@ -19,7 +19,7 @@ import java.util.Map;
  * canConstruct("aa", "ab") -> false
  * canConstruct("aa", "aab") -> true
  */
-public class problem383 {
+public class Problem383 {
     public static boolean canConstruct(String ransomNote, String magazine) {//14ms
         char[] magazineCharArray = magazine.toCharArray();
         int magazineSize = magazine.length();

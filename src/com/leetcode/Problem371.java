@@ -6,7 +6,7 @@ package com.leetcode;
  * Example:
  * Given a = 1 and b = 2, return 3.
  */
-public class problem371 {
+public class Problem371 {
     public static int getSum(int a, int b) {
         int carryBits = (a & b) << 1;
         int sum = a ^ b;

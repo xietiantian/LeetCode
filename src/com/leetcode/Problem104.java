@@ -10,7 +10,7 @@ import java.util.Stack;
  * The maximum depth is the number of nodes along the longest path
  * from the root node down to the farthest leaf node.
  */
-public class problem104 {
+public class Problem104 {
     /**
      * Definition for a binary tree node.
      */

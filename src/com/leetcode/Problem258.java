@@ -10,7 +10,7 @@ package com.leetcode;
  * Follow up:
  * Could you do it without any loop/recursion in O(1) runtime?
  */
-public class problem258 {
+public class Problem258 {
     public static int addDigits(int num) {
         int result = num;
         int temp = 0;

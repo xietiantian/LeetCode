@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 /**
  * Created by tiantian on 16-9-1.
  */
-public class problem349 {
+public class Problem349 {
     public int[] intersection(int[] nums1, int[] nums2) {//10ms
 
         Set<Integer> nums1Set = new HashSet<>();

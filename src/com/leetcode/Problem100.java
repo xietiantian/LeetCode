@@ -9,7 +9,7 @@ import java.util.LinkedList;
  * Two binary trees are considered equal if they are structurally identical
  * and the nodes have the same value.
  */
-public class problem100 {
+public class Problem100 {
     /**
      * Definition for a binary tree node.
      */

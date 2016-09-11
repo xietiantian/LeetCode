@@ -18,7 +18,7 @@ package com.leetcode;
  * Explanation:
  * 'e' is the letter that was added.
  */
-public class problem389 {
+public class Problem389 {
     public static char findTheDifference(String s, String t) {
         int sLen = s.length();
         char[] sChars = s.toCharArray();

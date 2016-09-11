@@ -23,7 +23,7 @@ import java.util.Queue;
  *  / \   / \
  * 9   6 3   1
  */
-public class problem226 {
+public class Problem226 {
     /**
      * Definition for a binary tree node.
      */

@@ -12,7 +12,7 @@ package com.leetcode;
  * You must do this in-place without making a copy of the array.
  * Minimize the total number of operations.
  */
-public class problem283 {
+public class Problem283 {
     public static void moveZeroes(int[] nums) {//1ms
         int size = nums.length;
         int zeroCount = 0;

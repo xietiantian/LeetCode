@@ -6,7 +6,7 @@ package com.leetcode;
  * Example:
  * Given s = "hello", return "olleh".
  */
-public class problem344 {
+public class Problem344 {
 
     public static String reverseString(String s) {//by tiantian
         int strLen = s.length();

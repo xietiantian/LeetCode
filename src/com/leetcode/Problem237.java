@@ -8,7 +8,7 @@ package com.leetcode;
  * node with value 3, the linked list should become 1 -> 2 -> 4 after calling
  * your function.
  */
-public class problem237 {
+public class Problem237 {
     public class ListNode {
         int val;
         ListNode next;
