@@ -7,7 +7,15 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * Created by tiantian on 16-9-1.
+ * Given two arrays, write a function to compute their intersection.
+ * <p>
+ * Example:
+ * Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
+ * <p>
+ * Note:
+ * <p>
+ * Each element in the result must be unique.
+ * The result can be in any order.
  */
 public class Problem349 {
     public int[] intersection(int[] nums1, int[] nums2) {//10ms
