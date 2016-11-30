@@ -51,7 +51,7 @@ public class Problem206 {
     }
 
     /**
-     * iterative solution
+     * iterative intSolution
      */
     public ListNode reverseList2(ListNode head) {//0ms
         ListNode newNext = null;

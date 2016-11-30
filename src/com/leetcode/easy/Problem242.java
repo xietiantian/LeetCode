@@ -16,7 +16,7 @@ import java.util.*;
  * <p>
  * Follow up:
  * What if the inputs contain unicode characters? How would you adapt your
- * solution to such case?
+ * intSolution to such case?
  */
 public class Problem242 {
 
