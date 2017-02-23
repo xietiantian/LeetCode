@@ -10,7 +10,7 @@ package com.leetcode.easy;
  * <p>
  * For example:
  * <p>
- * A -> 1
+ * ALPHABET -> 1
  * B -> 2
  * C -> 3
  * ...
