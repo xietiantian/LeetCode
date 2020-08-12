@@ -9,44 +9,8 @@ import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
  * should be made by splicing together the nodes of the first two lists.
  */
 public class Problem021 {
-
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {//14ms
-        if (l1 == null) {
-            return l2;
-        }
-        if (l2 == null) {
-            return l1;
-        }
-        ListNode cur1 = l1;
-        ListNode pre1 = null;
-        ListNode cur2 = l2;
-        ListNode pre2 = null;
-        ListNode temp;
-
-        while (cur1 != null) {
-            temp = cur2;
-            while (cur2 != null && cur1.val > cur2.val) {
-                pre2 = cur2;
-                cur2 = cur2.next;
-            }
-            if (cur2 != temp) {
-                if (pre1 != null) {
-                    pre1.next = temp;
-                } else {
-                    l1 = temp;
-                }
-                pre2.next = cur1;
-            }
-            pre1 = cur1;
-            cur1 = cur1.next;
-        }
-        if (cur2 != null) {
-            pre1.next = cur2;
-        }
-        return l1;
-    }
-
-    public ListNode mergeTwoLists2(ListNode l1, ListNode l2){//1ms
+    
+    public ListNode mergeTwoLists2(ListNode l1, ListNode l2){ // 0 ms, faster than 100.00%
         if(l1 == null) return l2;
         if(l2 == null) return l1;
         if(l1.val < l2.val){
@@ -56,5 +20,38 @@ public class Problem021 {
             l2.next = mergeTwoLists2(l1, l2.next);
             return l2;
         }
+    }
+    
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) { // 0 ms, faster than 100.00%
+        if(l1 == null) return l2;
+        if(l2 == null) return l1;
+        ListNode head;
+        ListNode p1, p2, p;
+        if(l1.val < l2.val) {
+            p = head = l1;
+            p1 = l1.next;
+            p2 = l2;
+        }else {
+            p = head = l2;
+            p2 = l2.next;
+            p1 = l1;
+        }
+        while(p1 != null && p2 != null) {
+            if(p1.val < p2.val) {
+                p.next = p1;
+                p = p1;
+                p1 = p1.next;
+            } else {
+                p.next = p2;
+                p = p2;
+                p2 = p2.next;
+            }
+        }
+        if(p1 != null){
+            p.next = p1;
+        }else if(p2 != null) {
+            p.next = p2;
+        }
+        return head;
     }
 }
