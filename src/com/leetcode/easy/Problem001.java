@@ -19,12 +19,14 @@ import java.util.HashMap;
  * return [0, 1].
  */
 public class Problem001 {
-    public static int[] twoSum(int[] nums, int target) {//8ms beats 74.81%
+
+    public int[] twoSum(int[] nums, int target) { // 1 ms, faster than 99.98%
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         int n = nums.length;
         for (int i = 0; i < n; i++) {
-            if (hashMap.containsKey(nums[i])) {
-                return new int[]{hashMap.get(nums[i]), i};
+            Integer sumWith = hashMap.get(nums[i]);
+            if (sumWith != null) {
+                return new int[]{sumWith, i};
             } else {
                 hashMap.put(target - nums[i], i);
             }
